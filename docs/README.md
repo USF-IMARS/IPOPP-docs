@@ -1,7 +1,8 @@
 Sensitive information (for IMaRS members only) to go along with these docs are in [the IMaRS-docs/IPOPP page](https://github.com/USF-IMARS/IMaRS-docs/blob/master/docs/IPOPP/README.md). If you have a question/concern about the docs or IPOPP, open an issue in [the issue tracker](https://github.com/USF-IMARS/IPOPP-docs/issues).
 
+For a brief summary of the software systems that comprise IPOPP see [systems.md](https://github.com/USF-IMARS/IPOPP-docs/blob/master/docs/systems.md).
 
-# General info:
+# General info about IMaRS specifically:
 * Sensors we're using : Modis & viirs 
 * Satellites: Modis: aqua, terra; VIRS: npp
 * Data is near-real-time. Estimated 4hrs delay. 
