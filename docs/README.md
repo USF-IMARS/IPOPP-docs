@@ -1,4 +1,4 @@
-Sensitive information (for IMaRS members only) to go along with this wiki is in [the IMaRS-docs/IPOPP page](https://github.com/USF-IMARS/IMaRS-docs/blob/master/docs/IPOPP/README.md). If you have a question/concern, open an issue in [the issue tracker](https://github.com/USF-IMARS/IPOPP-docs/issues).
+Sensitive information (for IMaRS members only) to go along with these docs are in [the IMaRS-docs/IPOPP page](https://github.com/USF-IMARS/IMaRS-docs/blob/master/docs/IPOPP/README.md). If you have a question/concern about the docs or IPOPP, open an issue in [the issue tracker](https://github.com/USF-IMARS/IPOPP-docs/issues).
 
 
 # General info:
