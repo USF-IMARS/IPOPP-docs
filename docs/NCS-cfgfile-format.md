@@ -2,6 +2,13 @@
 
 See also docs at `~/drl/ncs/doc`.
 
+
+> Every command includes at least two optional boolean parameters: “runFlag” and “debug”. If “runFlag” is not “false” the command executes. If “debug” is “true”, the command prints internal diagnostic information to the standard output.
+
+TODO:
+* standardize Ncs_run .errfile and .stdfile names. (<Ncs_set name="errfile_post" value=".errfile"/> and <Ncs_run ... errorFile="{cmd_name}{_}{errfile_post}" ... >
+
+
 ## Commands Not found in the Reference 
 
 ### Ncs_copy
