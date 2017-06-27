@@ -29,7 +29,7 @@ $ java -version
 
 * the "published" field in ipopp means that the file has been transferred to the "final location" according to ipopp. Meaning it has been moved from the processing server to the DSM.
 
-========================================
+---------------------------------------------------
 
 IPOPP controls the main satellite image processing pipeline.
 
@@ -81,10 +81,3 @@ Each Station Directory has these files:
 * lockfile-	lock file to prevent multiple execution of NCS in a station,
 * cmdfile	- polled file containing commands controlling station actions,
 * logfile - holds log messages if NCS cannot contact NISGS Event Log Server.
-
-# SPAs (Science Processing Algorithms)
-* Gmt 
-    - program does mercator projection and is old program from U of Hawaii
-
-
-========================================
