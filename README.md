@@ -10,6 +10,7 @@ Because the individual sub-systems of IPOPP are (somewhat) independent (hopefull
 * IS - Information System (TODO)
 * [DSM](https://github.com/USF-IMARS/dsm) - Data Storage Manager
 * [NSLS](https://github.com/USF-IMARS/nsls) - Logging System 
+* NCS - Control System (TODO)
 
 It may be possible to package the subsystems into this repo using git sub-modules in the future, but I haven't gottent there yet.
 
