@@ -23,11 +23,11 @@ use DSM;
 SET @product_selector="drl.%.modis.pds"
 # find the product id_key you want from ProductTypes.name
 select * from ProductTypes where name like @product_selector;
-SET @id_key = "drl.aqua.modis.pds"; 
+SET @id_key = "drl.aqua.modis.pds"; # choose the one you want and paste it here
 
 # find a product with the id_key and save the id
 select * from Products where productType=@id_key;
-SET @prod_id = 2;  # choose any product.id from the result
+SET @prod_id = 2;  # choose any product.id from the result and paste here
 
 # use the id to lookup the resources
 select * from Resources where product=@prod_id;
