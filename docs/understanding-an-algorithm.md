@@ -13,15 +13,16 @@ We will start from this `station.cfgfile`:
 
 ## input filename(s)
 1. within the `station.cfgfile` find a `<Dsm_command` element with the attribute `method="reserveProductLikeProductType"`. The first `<String` child element will have the `value` attribute set to an identifier key used by DSM to determine product types. It should look something like this: `<String value="imars.{sat}.{sensor}.{product_family}.mapped"/>`.
-2. to find how this maps to files you will need to connect to the DSM database and execute the following SQL:
+2. to find how this maps to files you will need to connect to the DSM database and execute the following SQL, but using the `product_selector` string you have found instead of the example one (`"drl.%.modis.pds"`) below.
 
 ```mysql
 # ==============================================================
 # look up a product files (resources) from a DSM identier key
 # ==============================================================
 use DSM;
+SET @product_selector=
 # find the product id_key you want from ProductTypes.name
-select * from ProductTypes where name like "drl.%.modis.pds";
+select * from ProductTypes where name like @product_selector;
 SET @id_key = "drl.aqua.modis.pds"; 
 
 # find a product with the id_key and save the id
