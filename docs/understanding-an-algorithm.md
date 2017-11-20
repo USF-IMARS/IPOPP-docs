@@ -20,7 +20,7 @@ We will start from this `station.cfgfile`:
 # look up a product files (resources) from a DSM identier key
 # ==============================================================
 use DSM;
-SET @product_selector=
+SET @product_selector="drl.%.modis.pds"
 # find the product id_key you want from ProductTypes.name
 select * from ProductTypes where name like @product_selector;
 SET @id_key = "drl.aqua.modis.pds"; 
