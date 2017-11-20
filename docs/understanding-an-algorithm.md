@@ -1,3 +1,5 @@
+AKA "How to convert an IPOPP SPA into a bash script" or "how to port IPOPP SPAs into another system"
+
 This is a short explaination on how to manually trace through a single "Science Processing Alrgorithm" script.
 We will go from the SPA files through to a single bash command that is executed on the worker.
 Before starting look over [SPA terminology & basics](https://github.com/USF-IMARS/IPOPP-docs/blob/master/docs/SPAs-Stations-Algorithms.md).
