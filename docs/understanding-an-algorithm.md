@@ -9,7 +9,8 @@ Before starting look over [SPA terminology & basics](https://github.com/USF-IMAR
 To start you must identify the `cfgfile` of the individual "SPA" "station" you want to deconstruct.
 We will start from this `station.cfgfile`:
 1. Find the `<InitAlgorithm` element - this points to another xml file that will define the command, and loads the algorithm into a variable (usually called `cfg_algo.OBJ`). Later in this file `<RunAlgorithm` element calls the loaded algorithm.
-2. from the install.xml file that was pointed to by `InitAlgorithm`, find the nearby `generic.xml`, which will include a `<Ncs_run` element with the `cmd` attribute set to a template of the actual command used.
+2. from the install.xml file that was pointed to by `InitAlgorithm`, identify the location of the `executables`. These are the commands used by this station.
+3. From the `install.xml`, find the nearby `generic.xml`, which will include a `<Ncs_run` element with the `cmd` attribute set to a template of the actual command used.
 
 ## input filename(s)
 1. within the `station.cfgfile` find a `<Dsm_command` element with the attribute `method="reserveProductLikeProductType"`. The first `<String` child element will have the `value` attribute set to an identifier key used by DSM to determine product types. It should look something like this: `<String value="imars.{sat}.{sensor}.{product_family}.mapped"/>`.
